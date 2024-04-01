@@ -8,12 +8,15 @@ import {
   faShop,
   faWallet,
 } from "@fortawesome/free-solid-svg-icons";
+import HeadingText from "../components/HeadingText";
+import SubHeadingText from "../components/SubHeadingText";
+import BodyText from "../components/BodyText";
 
 const Payments = () => {
   return (
     <div className="p-large flex">
       <div className="w-full">
-        <div className="text-4xl">Accept Payments</div>
+        <HeadingText title="Accept Payments" />
         <div className="flex mt-8">
           <PaymentCategory
             title="Online"
@@ -55,9 +58,11 @@ const PaymentCategory = ({ title, description, links, icon }) => {
     <div className="flex-1">
       <div className="flex gap-4 items-center">
         <FontAwesomeIcon icon={icon} className=" text-link-text text-xl" />
-        <div className="text-2xl">{title}</div>
+        <SubHeadingText title={title} />
       </div>
-      <div className="text-lg py-4 w-[90%]">{description}</div>
+      <div className="py-4 w-[90%]">
+        <BodyText text={description} />
+      </div>
       <div className="flex gap-3 flex-col">
         {links.map((link) => (
           <LinkText key={link} name={link} />
