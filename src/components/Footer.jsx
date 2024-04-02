@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="py-10">
       <div className="p-large flex">
-        <div className="flex-1">
+        <div className="flex-1 pr-12">
           <HeadingText title="Looking for something else?" />
           <div className="my-4">
             <BodyText text="If you need additional help, check out our support articles, community resources, and more." />

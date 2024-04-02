@@ -50,7 +50,7 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="p-large">
+    <div className="px-[13rem] py-28">
       <HeadingText title="Additional Solutions" />
       <div className="mt-14 flex">
         {solutions.map((solution, index) => (

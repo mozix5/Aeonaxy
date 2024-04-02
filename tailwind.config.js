@@ -8,7 +8,7 @@ module.exports = {
         "link-text": "#1072eb",
       },
       padding: {
-        "large": "3.5rem 13rem",
+        large: "4.5rem 13rem",
       },
     },
   },
