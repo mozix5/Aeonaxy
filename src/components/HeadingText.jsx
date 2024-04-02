@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const HeadingText = ({title}) => {
+const HeadingText = ({ title }) => {
   return (
-    <div className="text-[44px]">{title}</div>
-  )
-}
+    <div className="text-[44px] leading-[48px] tracking-tight">{title}</div>
+  );
+};
 
-export default HeadingText
+export default HeadingText;
