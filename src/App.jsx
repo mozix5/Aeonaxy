@@ -4,7 +4,7 @@ import Payments from "./pages/Payments";
 import HomeBanner from "./components/HomeBanner";
 import PaymentsBanner from "./components/PaymentsBanner";
 import Solutions from "./pages/Solutions";
-import Explore from "./Explore";
+import Explore from "./pages/Explore";
 
 const App = () => {
   return (
