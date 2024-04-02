@@ -5,6 +5,7 @@ import HomeBanner from "./components/HomeBanner";
 import PaymentsBanner from "./components/PaymentsBanner";
 import Solutions from "./pages/Solutions";
 import Explore from "./pages/Explore";
+import Developer from "./pages/Developer";
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       <Payments />
       <PaymentsBanner />
       <Solutions />
-      <Explore/>
+      <Explore />
+      <Developer />
     </div>
   );
 };
