@@ -6,7 +6,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 h-16 flex items-center justify-between px-12 z-50 bg-white">
+    <div className="sticky top-0 h-16 flex items-center justify-between px-12 z-50 bg-white shadow-xl">
       <div className="flex gap-12 items-center">
         <Logo />
         <button className="py-[0.25rem] px-[0.875rem] border-2 border-[#003087] rounded-3xl capitalize text-[#003087] font-normal flex items-center justify-center gap-2">
@@ -19,7 +19,7 @@ const Navbar = () => {
           {["Docs", "APIs & SDKs", "Tools", "Support"].map((item) => (
             <div
               key={item}
-              className="px-6 border-b-4 border-transparent hover:border-b-[#003087] cursor-pointer flex items-center"
+              className="px-6 border-b-4 border-transparent text-[#0c0c0d] hover:border-b-[#003087] cursor-pointer flex items-center"
             >
               {item}
             </div>
