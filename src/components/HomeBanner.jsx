@@ -2,14 +2,14 @@ import React from "react";
 
 const HomeBanner = () => {
   return (
-    <div className=" bg-dark-blue text-white px-[13rem] pt-6 pb-16">
+    <div className=" bg-dark-blue text-white lg:px-[13rem] py-16 p-small md:p-medium">
       <div className=" text-[#d1f1ff] text-[28px] opacity-[0.7] tracking-tight">
         PayPal Developer
       </div>
-      <div className=" text-[44px] py-8">
+      <div className=" text-[44px] py-8 tracking-tight leading-[48px]">
         Build a payment solution that's right for you.
       </div>
-      <div className=" text-lg pb-8">
+      <div className=" text-lg pb-8 tracking-tight">
         Find the resources you need to test and go live with online, mobile, or
         in-person payment solutions.
       </div>

@@ -13,12 +13,14 @@ import HeadingText from "../components/HeadingText";
 
 const FeatureCard = ({ icon, title, description, linkText }) => {
   return (
-    <div className="py-6 px-8 bg-white flex rounded-2xl gap-8 ml-4 mr-4">
-      <div className="pt-2">
+    <div className="py-6 px-8 bg-white flex flex-col md:flex-row rounded-2xl gap-4 lg:gap-8 md:ml-4 md:mr-4">
+      <div className="pt-2 text-center">
         <FontAwesomeIcon icon={icon} className="text-3xl text-[#c58c5f]" />
       </div>
       <div>
-        <SubHeadingText title={title} />
+        <div className=" text-center md:text-justify">
+          <SubHeadingText title={title} />
+        </div>
         <div className="mt-4">
           <BodyText text={description} />
         </div>
@@ -56,12 +58,12 @@ const Developer = () => {
   ];
 
   return (
-    <div className="p-large bg-[#fff0d7] flex">
+    <div className="lg:p-large bg-[#fff0d7] flex md:flex-row flex-col p-small gap-12 md:gap-0">
       <div className="flex-1 pt-8">
         <div>
           <HeadingText title="Developer Tools & Resources" />
         </div>
-        <div className=" pt-8 w-full">
+        <div className=" pt-8 w-full hidden md:block">
           <DeveloperSvg />
         </div>
       </div>

@@ -7,9 +7,9 @@ import BodyText from "./BodyText";
 
 const PaymentsBanner = () => {
   return (
-    <div className=" bg-[#f7f5f0] p-large ">
-      <div className="flex gap-12">
-        <div className="flex-1 justify-end flex">
+    <div className=" bg-[#f7f5f0] lg:p-large p-small md:p-medium">
+      <div className="flex lg:gap-12">
+        <div className="flex-1 lg:justify-end md:flex w-40 hidden">
           <PaymentsBannerSvg />
         </div>
         <div className="flex-1">

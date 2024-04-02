@@ -6,7 +6,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 h-16 flex items-center justify-between px-12 z-50 bg-white shadow-xl">
+    <div className="sticky hidden top-0 h-16 lg:flex items-center justify-between px-12 z-50 bg-white shadow-xl">
       <div className="flex gap-12 items-center">
         <Logo />
         <button className="py-[0.25rem] px-[0.875rem] border-2 border-[#003087] rounded-3xl capitalize text-[#003087] font-normal flex items-center justify-center gap-2">

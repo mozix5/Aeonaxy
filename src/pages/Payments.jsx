@@ -14,10 +14,10 @@ import BodyText from "../components/BodyText";
 
 const Payments = () => {
   return (
-    <div className="p-large flex">
+    <div className="lg:p-large flex p-small md:p-medium">
       <div className="w-full">
         <HeadingText title="Accept Payments" />
-        <div className="flex mt-8">
+        <div className="flex mt-8 md:flex-row flex-col gap-8 md:gap-0 px-6">
           <PaymentCategory
             title="Online"
             description="Build a scalable checkout solution for web and mobile with our REST APIs and JavaScript SDK"
@@ -31,7 +31,7 @@ const Payments = () => {
             icon={faWallet}
           />
         </div>
-        <div className="flex mt-10">
+        <div className="flex mt-10 md:flex-row flex-col gap-8 md:gap-0 px-6">
           <PaymentCategory
             title="Multiparty"
             description="Create an onboarding and payments solution for your marketplace or payments platform"
@@ -46,7 +46,7 @@ const Payments = () => {
           />
         </div>
       </div>
-      <div className="w-550 pt-6">
+      <div className="w-550 pt-6 hidden">
         <PaymentsImage />
       </div>
     </div>
@@ -60,7 +60,7 @@ const PaymentCategory = ({ title, description, links, icon }) => {
         <FontAwesomeIcon icon={icon} className=" text-link-text text-xl" />
         <SubHeadingText title={title} />
       </div>
-      <div className="py-4 w-[90%]">
+      <div className="py-4 md:w-[90%]">
         <BodyText text={description} />
       </div>
       <div className="flex gap-3 flex-col">

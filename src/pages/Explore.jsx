@@ -56,9 +56,9 @@ const Explore = () => {
   ];
 
   return (
-    <div className="bg-[#fafafa] p-large">
+    <div className="bg-[#fafafa] p-small lg:p-large md:p-medium">
       <HeadingText title="Explore our APIs & SDKs" />
-      <div className="flex gap-12 mt-6 py-4 px-6">
+      <div className="flex gap-12 mt-6 py-4 px-6 flex-col lg:flex-row">
         {sections.map((section, index) => (
           <Section key={index} {...section} />
         ))}

@@ -9,6 +9,8 @@ module.exports = {
       },
       padding: {
         large: "4.5rem 13rem",
+        small: "3rem 1.5rem",
+        medium: "4rem 2rem",
       },
     },
   },

@@ -17,7 +17,7 @@ const SolutionItem = ({ icon, title, description }) => {
         <FontAwesomeIcon icon={icon} className="text-link-text text-xl" />
         <SubHeadingText title={title} />
       </div>
-      <div className="mt-1">
+      <div className="mt-1 md:w-[90%]">
         <BodyText text={description} />
       </div>
       <div className="mt-4">
@@ -50,9 +50,9 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="px-[13rem] py-28">
+    <div className="lg:px-[13rem] lg:py-28 p-small md:p-medium">
       <HeadingText title="Additional Solutions" />
-      <div className="mt-14 flex">
+      <div className="mt-14 flex flex-col md:flex-row gap-8 md:gap-0 px-6 md:px-0">
         {solutions.map((solution, index) => (
           <SolutionItem key={index} {...solution} />
         ))}
