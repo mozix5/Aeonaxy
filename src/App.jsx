@@ -6,6 +6,7 @@ import PaymentsBanner from "./components/PaymentsBanner";
 import Solutions from "./pages/Solutions";
 import Explore from "./pages/Explore";
 import Developer from "./pages/Developer";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Solutions />
       <Explore />
       <Developer />
+      <Footer/>
     </div>
   );
 };
