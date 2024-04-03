@@ -17,7 +17,7 @@ const Payments = () => {
     <div className="lg:p-large flex p-small md:p-medium">
       <div className="w-full">
         <HeadingText title="Accept Payments" />
-        <div className="flex mt-8 md:flex-row flex-col gap-8 md:gap-0 px-6">
+        <div className="flex mt-8 md:flex-row flex-col gap-8 md:gap-0 lg:px-6">
           <PaymentCategory
             title="Online"
             description="Build a scalable checkout solution for web and mobile with our REST APIs and JavaScript SDK"
@@ -31,7 +31,7 @@ const Payments = () => {
             icon={faWallet}
           />
         </div>
-        <div className="flex mt-10 md:flex-row flex-col gap-8 md:gap-0 px-6">
+        <div className="flex mt-10 md:flex-row flex-col gap-8 md:gap-0 lg:px-6">
           <PaymentCategory
             title="Multiparty"
             description="Create an onboarding and payments solution for your marketplace or payments platform"

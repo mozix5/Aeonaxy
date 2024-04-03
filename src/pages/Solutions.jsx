@@ -52,7 +52,7 @@ const Solutions = () => {
   return (
     <div className="lg:px-[13rem] lg:py-28 p-small md:p-medium">
       <HeadingText title="Additional Solutions" />
-      <div className="mt-14 flex flex-col md:flex-row gap-8 md:gap-0 px-6 md:px-0">
+      <div className="mt-14 flex flex-col md:flex-row gap-8 md:gap-0 lg:px-6 px-4">
         {solutions.map((solution, index) => (
           <SolutionItem key={index} {...solution} />
         ))}

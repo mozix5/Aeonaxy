@@ -29,7 +29,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="hidden">
+        <div className="hidden md:block">
           <SupportSvg />
         </div>
       </div>
