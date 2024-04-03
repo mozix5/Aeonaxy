@@ -1,15 +1,32 @@
-import React from 'react'
-const NavbarMobile = ({setter}) => {
-  return (
-    <div  className="md:hidden z-20 fixed top-0 left-0 right-0 h-[60px] bg-[#4285F4] flex [&>*]:my-auto px-2 justify-between">
-        <button className='text-4xl flex text-white'  onClick={() => {
-          setter((oldVal) => !oldVal);
-        }}>
-            menu
-        </button>
-        <span className='text-white mx-5 text-2xl font-semi-bold'>Dashboard</span>
-    </div>
-  )
-}
+import React from "react";
+import NavItems from "./NavItems";
+import PrimaryButton from "./PrimaryButton";
 
-export default NavbarMobile
+const NavbarMobile = ({ open, setter }) => {
+  const appendClass = open ? "ml-0" : "ml-[-380px]";
+  const ModalOverlay = () => (
+    <div
+      className={`flex lg:hidden overflow-y-hidden fixed top-0 right-0 bottom-0 left-0 bg-black/50 z-10`}
+      onClick={() => {
+        setter((oldVal) => !oldVal);
+      }}
+    />
+  );
+
+  return (
+    <>
+      <div
+        className={`h-screen flex flex-col gap-32 fixed z-50 w-[15rem] md:w-[20rem] bg-white p-small ${appendClass}`}
+      >
+        <div>
+          <NavItems />
+        </div>
+        <PrimaryButton name="Login" />
+        <div className=""></div>
+      </div>
+      {open && <ModalOverlay />}
+    </>
+  );
+};
+
+export default NavbarMobile;
