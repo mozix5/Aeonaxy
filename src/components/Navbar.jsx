@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import PrimaryButton from "./PrimaryButton";
 import Logo from "../svg/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faMagnifyingGlass,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import NavItems from "./NavItems";
 
-const Navbar = ({ setter }) => {
+const Navbar = ({ setter, show }) => {
   return (
     <div className="sticky top-0 h-16 flex items-center justify-between px-6 lg:px-12 z-50 bg-white shadow-xl">
       <div className="flex gap-6 lg:gap-12 items-center">
         <FontAwesomeIcon
-          icon={faBars}
+          icon={show ? faXmark : faBars}
           className="text-2xl cursor-pointer"
           onClick={() => setter((oldVal) => !oldVal)}
         />

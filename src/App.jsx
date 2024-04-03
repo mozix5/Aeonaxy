@@ -12,8 +12,8 @@ import NavbarMobile from "./components/NavbarMobile";
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" ">
-      <Navbar setter={setIsOpen}/>
+    <div>
+      <Navbar setter={setIsOpen} show={isOpen}/>
       <div className="lg:hidden">
         <NavbarMobile setter={setIsOpen} open={isOpen}/>
       </div>
