@@ -44,7 +44,7 @@ const Footer = () => {
           "Contact",
         ].map((item) => {
           return (
-            <div className="text-lg font-semibold text-[#0c0c0d] leading-[24px] underline">
+            <div className="text-lg font-semibold text-[#0c0c0d] leading-[24px] underline" key={item}>
               {item}
             </div>
           );

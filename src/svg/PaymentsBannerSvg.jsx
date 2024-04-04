@@ -3,7 +3,7 @@ import React from "react";
 const PaymentsBannerSvg = () => {
   return (
     <svg
-      class="phoneAndCoinsIcon"
+      className="phoneAndCoinsIcon"
       width="318"
       height="316"
       viewBox="0 0 318 316"

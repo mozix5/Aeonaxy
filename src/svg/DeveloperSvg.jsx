@@ -3,7 +3,7 @@ import React from "react";
 const DeveloperSvg = () => {
   return (
     <svg
-      class="couchIcon"
+      className="couchIcon"
       width="80%"
       viewBox="0 0 472 369"
       fill="none"
